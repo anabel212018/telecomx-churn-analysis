@@ -7,7 +7,7 @@ A través de técnicas de análisis exploratorio de datos (EDA) y modelos de mac
 
 El proyecto forma parte del Challenge de Data Science.
 
-🎯 Objetivos
+Objetivos
 
 Comprender la estructura y características del conjunto de datos.
 
@@ -19,11 +19,11 @@ Entrenar y evaluar modelos predictivos de churn.
 
 Comparar modelos y seleccionar el más eficiente desde una perspectiva de negocio.
 
-📂 Estructura del proyecto
-📁 TelecomX-Churn-Analysis
-│
-├── 📓 TelecomX_Churn_Analysis.ipynb   # Notebook principal con todo el análisis
-├── 📄 README.md                      # Documentación del proyecto
+Estructura del proyecto
+TelecomX-Churn-Analysis
+
+  TelecomX_Churn_Analysis.ipynb   # Notebook principal con todo el análisis
+  README.md                      # Documentación del proyecto
 
 Fuente de datos
 
@@ -92,32 +92,31 @@ La métrica priorizada fue Recall de la clase Churn (1), ya que permite identifi
 Conclusiones
 
 El churn presenta patrones claros asociados a variables contractuales y de gasto.
-
 Un alto accuracy no garantiza una buena detección de clientes que abandonan.
-
 El Árbol de Decisión mostró mejor capacidad para identificar clientes en riesgo.
-
 Priorizar el recall permite tomar acciones preventivas más efectivas.
-
 
 Recomendaciones
 
 Implementar modelos orientados a maximizar el recall de churn.
-
 Utilizar los resultados para acciones de retención temprana.
-
 Explorar ajustes de umbral y otros modelos en futuras iteraciones.
 
 
 Próximos pasos (trabajo futuro)
+- Optimización de hiperparámetros.
+- Prueba de modelos adicionales (Random Forest, XGBoost).
+- Análisis de correlación más profundo.
+- Implementación de un pipeline de producción.
 
-Optimización de hiperparámetros.
+Se ajustó el umbral de decisión para priorizar la detección de clientes en riesgo. 
+Al reducir el threshold de 0.50 a 0.30, el recall de churn aumentó significativamente, permitiendo identificar más clientes propensos a cancelar el servicio.
 
-Prueba de modelos adicionales (Random Forest, XGBoost).
-
-Análisis de correlación más profundo.
-
-Implementación de un pipeline de producción.
+Conclusión Estratégica
+El modelo de Regresión Logística fue seleccionado como modelo final debido a su estabilidad y capacidad interpretativa.
+Al ajustar el threshold de 0.5 a 0.30 se logró aumentar el recall de clientes en riesgo, priorizando la detección temprana de churn.
+Aunque la precisión global disminuye ligeramente, la mejora en recall permite a la empresa actuar preventivamente sobre un mayor número de clientes con probabilidad de cancelación.
+Desde una perspectiva de negocio, es preferible asumir algunos falsos positivos si esto reduce la pérdida de clientes reales.
 
 Autor
 Magaly Anabel Hernández
